@@ -1,4 +1,4 @@
-package com.capgemini.empwebapp.controller;
+package com.capgemini.empwebapp.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,7 +14,7 @@ import com.capgemini.empwebapp.dao.EmployeeDAOImple;
 import com.capgemini.empwebapp.dto.EmployeeBean;
 
 @WebServlet("/addEmployee")
-public class EmployeeAdd {
+public class AddServlet {
 
 		protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 			String id = req.getParameter("id");
@@ -26,7 +26,7 @@ public class EmployeeAdd {
 			EmployeeBean bean = new EmployeeBean();
 			bean.setId(id);
 			bean.setName(name);
-			bean.setEmailid(email);
+			bean.setEmailid(email); 
 			bean.setPassword(password);
 			bean.setMobilenumber(mobile);
 			bean.setAge(age);

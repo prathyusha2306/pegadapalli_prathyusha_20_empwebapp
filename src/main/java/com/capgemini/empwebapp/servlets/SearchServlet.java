@@ -1,4 +1,4 @@
-package com.capgemini.empwebapp.controller;
+package com.capgemini.empwebapp.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,7 +12,7 @@ import com.capgemini.empwebapp.dao.EmployeeDAO;
 import com.capgemini.empwebapp.dao.EmployeeDAOImple;
 import com.capgemini.empwebapp.dto.EmployeeBean;
 
-public class SearchEmployee extends HttpServlet {
+public class SearchServlet extends HttpServlet {
 @Override
 protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 

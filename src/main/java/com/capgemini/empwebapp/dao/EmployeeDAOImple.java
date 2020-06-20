@@ -12,7 +12,7 @@ import com.capgemini.empwebapp.dto.EmployeeBean;
 public class EmployeeDAOImple implements EmployeeDAO {
 
 	@Override
-	public EmployeeBean login(String email, String password) {
+	public EmployeeBean login(int id, String password) {
 		// TODO Auto-generated method stub
 		return null;
 	}

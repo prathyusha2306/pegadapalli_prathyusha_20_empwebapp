@@ -1,4 +1,4 @@
-package com.capgemini.empwebapp.controller;
+package com.capgemini.empwebapp.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.capgemini.empwebapp.dao.EmployeeDAO;
 import com.capgemini.empwebapp.dao.EmployeeDAOImple;
 
-public class DeleteContoller  extends HttpServlet{
+public class DeleteServlet  extends HttpServlet{
 @Override
 protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	String id=req.getParameter("id1");
